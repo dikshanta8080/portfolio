@@ -60,6 +60,7 @@ export interface PersonalInfo {
   github: string;
   email: string;
   linkedin: string;
+  resumeUrl: string;
   typewriterRoles: string[];
 }
 

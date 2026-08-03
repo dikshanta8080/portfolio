@@ -1,4 +1,4 @@
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { personalInfo } from '../constants/data';
 
 export default function Footer() {
@@ -11,15 +11,26 @@ export default function Footer() {
           <p className="text-[#a0a0b0] text-sm">
             {personalInfo.name} &copy; {currentYear}
           </p>
-          <a
-            href={personalInfo.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-[#a0a0b0] hover:text-[#00f5ff] transition-colors text-sm"
-          >
-            <FaGithub size={18} />
-            dikshanta8080
-          </a>
+          <div className="flex items-center gap-6">
+            <a
+              href={personalInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-[#a0a0b0] hover:text-[#00f5ff] transition-colors text-sm"
+            >
+              <FaGithub size={18} />
+              dikshanta8080
+            </a>
+            <a
+              href={personalInfo.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-[#a0a0b0] hover:text-[#00f5ff] transition-colors text-sm"
+            >
+              <FaLinkedin size={18} />
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Particles, { ParticlesProvider } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import type { ISourceOptions } from '@tsparticles/engine';
-import { FaGithub, FaArrowDown } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaArrowDown, FaDownload } from 'react-icons/fa';
 import { personalInfo } from '../constants/data';
 import TerminalAnimation from './TerminalAnimation';
 
@@ -133,13 +133,32 @@ export default function Hero() {
                 View Projects
               </button>
               <a
+                href={personalInfo.resumeUrl}
+                download="Dikshanta_Acharya_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary flex items-center gap-2"
+              >
+                <FaDownload size={14} />
+                Download CV
+              </a>
+              <a
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary"
+                className="btn-secondary flex items-center gap-2"
               >
                 <FaGithub size={16} />
-                GitHub Profile
+                GitHub
+              </a>
+              <a
+                href={personalInfo.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary flex items-center gap-2"
+              >
+                <FaLinkedin size={16} />
+                LinkedIn
               </a>
             </div>
           </motion.div>

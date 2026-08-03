@@ -13,15 +13,17 @@ export const personalInfo: PersonalInfo = {
   role: 'Java Spring Boot Backend Developer',
   tagline:
     'Building scalable backends with Java, Spring Boot & Event-Driven Architecture',
-  bio: 'Passionate Java backend developer specializing in REST APIs, Spring Security, and event-driven systems using Kafka. I build clean, secure, and production-ready backends.',
+  bio: 'Passionate Java backend developer specializing in REST APIs, Spring Security, and event-driven systems using Kafka. Actively expanding skills in Linux server management and Jenkins automation to build, test, and deploy production-ready backends.',
   github: 'https://github.com/dikshanta8080',
   email: 'dikshantaacharya04@gmail.com',
-  linkedin: 'https://linkedin.com/in/dikshanta-acharya',
+  linkedin: 'https://www.linkedin.com/in/dikshanta-acharya-0097122a7/',
+  resumeUrl: '/Dikshanta_Acharya_CV.pdf',
   typewriterRoles: [
     'Java Developer',
     'Spring Boot Developer',
     'Backend Developer',
     'Kafka Developer',
+    'Linux & Jenkins Automation',
   ],
 };
 
@@ -64,13 +66,14 @@ export const skillCategories: SkillCategory[] = [
     category: 'Tools & DevOps',
     skills: [
       { name: 'Docker', icon: 'SiDocker', brandColor: '#2496ED' },
+      { name: 'Jenkins', icon: 'SiJenkins', brandColor: '#D24939' },
+      { name: 'Linux Servers', icon: 'SiLinux', brandColor: '#FCC624' },
       { name: 'Git', icon: 'SiGit', brandColor: '#F05032' },
       { name: 'GitHub', icon: 'SiGithub', brandColor: '#ffffff' },
       { name: 'Postman', icon: 'SiPostman', brandColor: '#FF6C37' },
       { name: 'Swagger', icon: 'SiSwagger', brandColor: '#85EA2D' },
       { name: 'IntelliJ', icon: 'SiIntellijidea', brandColor: '#FE315D' },
       { name: 'TypeScript', icon: 'SiTypescript', brandColor: '#3178C6' },
-      { name: 'Linux', icon: 'SiLinux', brandColor: '#FCC624' },
     ],
   },
 ];
@@ -229,7 +232,7 @@ export const socialLinks: SocialLink[] = [
   { name: 'GitHub', url: 'https://github.com/dikshanta8080', icon: 'FaGithub' },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/dikshanta-acharya',
+    url: 'https://www.linkedin.com/in/dikshanta-acharya-0097122a7/',
     icon: 'FaLinkedin',
   },
 ];

@@ -6,6 +6,7 @@ import {
   FaDocker,
   FaDatabase,
   FaGitAlt,
+  FaServer,
 } from 'react-icons/fa';
 import {
   SiApachekafka,
@@ -14,6 +15,7 @@ import {
   SiGradle,
   SiHibernate,
   SiIntellijidea,
+  SiJenkins,
   SiLinux,
   SiMongodb,
   SiMysql,
@@ -46,6 +48,8 @@ const iconMap: Record<string, IconType> = {
   SiIntellijidea: SiIntellijidea,
   SiTypescript: SiTypescript,
   SiLinux: SiLinux,
+  SiJenkins: SiJenkins,
+  FaServer: FaServer,
   FaGithub: FaGithub,
   FaLinkedin: FaLinkedin,
 };

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
-import { navLinks } from '../constants/data';
+import { FaDownload } from 'react-icons/fa';
+import { navLinks, personalInfo } from '../constants/data';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -87,6 +88,16 @@ export default function Navbar() {
                 </a>
               );
             })}
+            <a
+              href={personalInfo.resumeUrl}
+              download="Dikshanta_Acharya_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-xs px-3 py-1.5 ml-3 flex items-center gap-1.5"
+            >
+              <FaDownload size={11} />
+              CV
+            </a>
           </div>
 
           <button
@@ -130,6 +141,17 @@ export default function Navbar() {
                   </a>
                 );
               })}
+              <a
+                href={personalInfo.resumeUrl}
+                download="Dikshanta_Acharya_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 btn-primary text-sm py-2.5 px-4 flex items-center justify-center gap-2"
+                onClick={() => setIsMobileOpen(false)}
+              >
+                <FaDownload size={14} />
+                Download CV
+              </a>
             </div>
           </motion.div>
         )}

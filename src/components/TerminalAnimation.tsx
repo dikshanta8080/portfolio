@@ -14,13 +14,11 @@ const TERMINAL_SEQUENCE: TerminalLine[] = [
   { type: 'output', text: 'openjdk 21.0.2 — ready ✓' },
   { type: 'command', text: './gradlew bootRun' },
   { type: 'output', text: 'Started EcomMedApplication in 2.3s ✓' },
-  { type: 'command', text: 'curl -X POST /auth/login' },
-  { type: 'output', text: '{ "token": "eyJhbGciOiJIUzI1NiJ9..." } ✓' },
-  { type: 'command', text: 'kafka-topics --list' },
-  { type: 'output', text: 'order-placed  user-registered  product-added ✓' },
-  { type: 'command', text: 'docker ps' },
-  { type: 'output', text: 'kafka ✓   zookeeper ✓   postgres ✓' },
-  { type: 'comment', text: '# All systems operational 🚀' },
+  { type: 'command', text: 'jenkins-cli build deploy-pipeline' },
+  { type: 'output', text: 'Building Docker image & running tests... SUCCESS ✓' },
+  { type: 'command', text: 'ssh prod@linux-server "docker ps"' },
+  { type: 'output', text: 'kafka ✓  postgres ✓  app-server ✓  jenkins-agent ✓' },
+  { type: 'comment', text: '# Deployed to Linux Server via Jenkins CI/CD 🚀' },
 ];
 
 const CHAR_SPEED = 40;

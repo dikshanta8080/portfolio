@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaDownload } from 'react-icons/fa';
 import { personalInfo, stats } from '../constants/data';
 import {
   useScrollAnimation,
@@ -45,15 +45,27 @@ export default function About() {
               code I write is driven by clean architecture principles and
               production-ready practices.
             </p>
-            <a
-              href={personalInfo.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary inline-flex"
-            >
-              <FaGithub size={16} />
-              View GitHub Profile
-            </a>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href={personalInfo.resumeUrl}
+                download="Dikshanta_Acharya_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center gap-2"
+              >
+                <FaDownload size={14} />
+                Download CV
+              </a>
+              <a
+                href={personalInfo.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary inline-flex items-center gap-2"
+              >
+                <FaGithub size={16} />
+                View GitHub Profile
+              </a>
+            </div>
           </motion.div>
 
           <motion.div
